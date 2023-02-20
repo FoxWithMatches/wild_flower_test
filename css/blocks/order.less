@@ -6,6 +6,10 @@
   &_container {
     margin: 0 auto;
     width: 466px;
+
+    @media @mobile {
+        width: 233px;
+    }
   }
 
   &_header {
@@ -16,6 +20,10 @@
 
     @media @tablet {
       font-size: 32px;
+    }
+
+    @media @mobile {
+        font-size: 20px;
     }
 
     &:after {
@@ -44,10 +52,24 @@
 
   }
 
+  &_item {
+    @media @tablet {
+        text-align: center;
+    }
+  }
+
   &_h4 {
     font-size: 24px;
     font-weight: 400;
     margin-top: 58px;
+
+    @media @tablet {
+        font-size: 18px;
+    }
+
+    @media @mobile {
+        font-size: 16px;
+    }
   }
 
   &_text {
@@ -56,6 +78,26 @@
     font-weight: 300;
     font-size: 16px;
     margin-top: 24px;
+
+    @media @tablet {
+        font-size: 14px;
+    }
+
+    @media @mobile {
+        font-size: 12px;
+    }
+  }
+
+  &_image {
+    width: 60px;
+
+    @media @tablet {
+        width: 50px;
+      }
+
+      @media @mobile {
+        width: 40px;
+      }
   }
 }
 
