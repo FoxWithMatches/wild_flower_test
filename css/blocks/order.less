@@ -1,1 +1,74 @@
 //main: ../style.less
+
+.order {
+  margin-top: 82px;
+
+  &_container {
+    margin: 0 auto;
+    width: 466px;
+  }
+
+  &_header {
+    position: relative;
+    font-size: 40px;
+    font-weight: 400;
+    color: @black;
+
+    @media @tablet {
+      font-size: 32px;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 69px;
+      height: 2px;
+      background-color: @beige;
+
+      position: absolute;
+      top: -2px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  &_inner {
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @media @tablet {
+        gap: 32px;
+    }
+
+  }
+
+  &_h4 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 58px;
+  }
+
+  &_text {
+    width: 176px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 24px;
+  }
+}
+
+.vector {
+  @media @tablet {
+    display: none;
+  }
+
+  &_rotate {
+    rotate: 180deg;
+
+    @media @tablet {
+      display: none;
+    }
+  }
+}

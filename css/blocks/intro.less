@@ -5,9 +5,22 @@
   justify-content: space-between;
   margin-top: 37px;
 
+  @media @tablet {
+    margin-top: 115px;
+
+  }
+
   &_inner {
     display: flex;
     align-items: center;
+  }
+
+  &_content {
+    @media @tablet {
+      width: 100%;
+      text-align: center;
+    }
+  
   }
 
   &_header {
@@ -16,10 +29,19 @@
     font-weight: 400;
     color: @black;
 
+    @media @tablet {
+      font-size: 42px;
+    }
+
     &_image {
         position: absolute;
         top: 157px;
         left: 50px;
+
+        @media @tablet {
+          top: 137px;
+          left: 20px;
+        }
     }
   }
 
@@ -31,11 +53,21 @@
     line-height: 34px;
     margin: 32px 0 64px 0;
     width: 570px;
+
+    @media @tablet {
+      width: 344px;
+      margin: 32px auto 64px auto;
+      font-size: 16px;
+    }
   }
 
   &_contacts {
     position: relative;
     margin-left: 44px;
     display: flex;
+
+    @media @desktop {
+      display: none;
+    }
   }
 }
