@@ -1,0 +1,41 @@
+//main: ../style.less
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 37px;
+
+  &_inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &_header {
+    position: relative;
+    font-size: 59px;
+    font-weight: 400;
+    color: @black;
+
+    &_image {
+        position: absolute;
+        top: 157px;
+        left: 50px;
+    }
+  }
+
+  &_text {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: @black;
+    line-height: 34px;
+    margin: 32px 0 64px 0;
+    width: 570px;
+  }
+
+  &_contacts {
+    position: relative;
+    margin-left: 44px;
+    display: flex;
+  }
+}

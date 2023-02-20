@@ -1,0 +1,52 @@
+//main: ../style.less
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  &_link {
+    position: relative;
+    margin-left: 48px;
+    font-size: 20px;
+    text-decoration: none;
+    color: @black;
+
+    &:hover {
+        cursor: default;
+    }
+
+    &:after {
+      content: "";
+      display: none;
+      width: 0;
+      height: 1px;
+      background-color: @beige;
+
+      position: absolute;
+      top: -2px;
+      left: 0;
+      z-index: 1;
+
+      transition: width 0.2s linear;
+    }
+
+    &:hover {
+      &:after {
+        display: block;
+        width: 27px;
+      }
+    }
+  }
+
+  &_phone {
+    display: flex;
+    align-items: center;
+
+    &_link {
+        color: @beige;
+        font-size: 20px;
+        text-decoration: none;
+        margin-left: 16px;
+    }
+  }
+}

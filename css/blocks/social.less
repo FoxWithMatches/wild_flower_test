@@ -1,0 +1,29 @@
+//main: ../style.less
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    position: absolute;
+    bottom: 0;
+    right: -67px;
+
+    &_image {
+        opacity: .5;
+        transition: 1s linear opacity;
+        
+        &:hover{
+            cursor: default;
+            opacity: 1;
+        }
+    }
+
+    &_link {
+        &:hover{
+            cursor: default;
+            opacity: 1;
+        }
+        
+    }
+}
