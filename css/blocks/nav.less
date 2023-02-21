@@ -1,8 +1,29 @@
 //main: ../style.less
 
 .nav {
+  position: relative;
   display: flex;
   align-items: center;
+
+  @media @tablet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+    background-color: @beige;
+    text-align: center;
+    flex-direction: column;
+
+    display: none;
+
+    &.show {
+        display: flex;
+    }
+}
 
   &_link {
     position: relative;
@@ -10,6 +31,12 @@
     font-size: 20px;
     text-decoration: none;
     color: @black;
+
+    @media @tablet {
+      color: @light-gray;
+      margin-top: 16px;
+      margin-left: 0;
+    }
 
     &:hover {
         cursor: default;

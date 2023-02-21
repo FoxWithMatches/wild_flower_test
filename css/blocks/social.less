@@ -11,7 +11,7 @@
 
     &_image {
         opacity: .5;
-        transition: 1s linear opacity;
+        transition: .2s linear opacity;
         
         &:hover{
             cursor: default;
@@ -25,5 +25,18 @@
             opacity: 1;
         }
         
+    }
+
+    //menu
+
+    &_menu {
+        display: none;
+
+        &.show {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin-top: 48px;
+        }
     }
 }

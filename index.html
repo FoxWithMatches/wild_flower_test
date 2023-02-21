@@ -11,23 +11,63 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
     <title>Wild Flower</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header_inner">
-          <img class="header_logo" src="image/logo.png" alt="logo" />
-          <nav class="nav">
+          <img src="image/logo.png" alt="logo" />
+          <nav class="nav" id="nav">
+            <img class="header_logo" src="image/whitelogo.png" alt="logo" />
             <a href="#" class="nav_link">Букеты</a>
             <a href="#" class="nav_link">Отзывы</a>
             <a href="#" class="nav_link">Доставка и оплата</a>
             <a href="#" class="nav_link">Контакты</a>
+            <div class="social_menu" id="social_menu">
+              <a href="#" class="social_link">
+                <img
+                  class="social_image"
+                  src="image/logo/twitter.svg"
+                  alt="logo"
+                />
+              </a>
+              <a href="#" class="social_link">
+                <img
+                  class="social_image"
+                  src="image/logo/pinterest.svg"
+                  alt="logo"
+                />
+              </a>
+              <a href="#" class="social_link">
+                <img
+                  class="social_image"
+                  src="image/logo/youTube.svg"
+                  alt="logo"
+                />
+              </a>
+              <a href="#" class="social_link">
+                <img
+                  class="social_image"
+                  src="image/logo/facebook.svg"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <button class="burger_icon" type="button" id="close">
+                <img src="image/close.png" alt="close burger" />
+              </button>
           </nav>
           <div class="nav_phone">
             <img src="image/iconcall.png" alt="image phone" />
             <a href="#" class="nav_phone_link">+7 (960) 210-22-33</a>
           </div>
+
+          <button class="burger" type="button" id="navToggle">
+            <img src="image/menu.svg" alt="open burger" />
+          </button>
         </div>
       </div>
     </header>
@@ -99,35 +139,51 @@
               <p class="order_text">Выберите букет и оформите заказ</p>
             </div>
 
-          <div class="order_item">
-            <img class="order_image" src="image/order/2.png" alt="image" />
-            <img class="vector_rotate" src="image/order/vector.png" alt="image" />
-            <h4 class="order_h4">Детали</h4>
-            <p class="order_text">Мы вам перезвоним в течение 10 минут и уточним детали</p>
-          </div>
+            <div class="order_item">
+              <img class="order_image" src="image/order/2.png" alt="image" />
+              <img
+                class="vector_rotate"
+                src="image/order/vector.png"
+                alt="image"
+              />
+              <h4 class="order_h4">Детали</h4>
+              <p class="order_text">
+                Мы вам перезвоним в течение 10 минут и уточним детали
+              </p>
+            </div>
 
-          <div class="order_item">
-            <img class="order_image" src="image/order/3.png" alt="image" />
-            <img class="vector" src="image/order/vector.png" alt="image" />
-            <h4 class="order_h4">Оплата</h4>
-            <p class="order_text">Оплатите онлайн или при получении</p>
-          </div>
+            <div class="order_item">
+              <img class="order_image" src="image/order/3.png" alt="image" />
+              <img class="vector" src="image/order/vector.png" alt="image" />
+              <h4 class="order_h4">Оплата</h4>
+              <p class="order_text">Оплатите онлайн или при получении</p>
+            </div>
 
-          <div class="order_item">
-            <img class="order_image" src="image/order/4.png" alt="image" />
-            <img class="vector_rotate" src="image/order/vector.png" alt="image" />
-            <h4 class="order_h4">Сборка и упаковка</h4>
-            <p class="order_text">Собререм букет с учетом ваших пожеланий и упакуем для доставки</p>
-          </div>
+            <div class="order_item">
+              <img class="order_image" src="image/order/4.png" alt="image" />
+              <img
+                class="vector_rotate"
+                src="image/order/vector.png"
+                alt="image"
+              />
+              <h4 class="order_h4">Сборка и упаковка</h4>
+              <p class="order_text">
+                Собререм букет с учетом ваших пожеланий и упакуем для доставки
+              </p>
+            </div>
 
-          <div class="order_item">
-            <img class="order_image" src="image/order/5.png" alt="image" />
-            <h4 class="order_h4">Доставка</h4>
-            <p class="order_text">Курьер позвонит за час и доставит букет во время</p>
+            <div class="order_item">
+              <img class="order_image" src="image/order/5.png" alt="image" />
+              <h4 class="order_h4">Доставка</h4>
+              <p class="order_text">
+                Курьер позвонит за час и доставит букет во время
+              </p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </main>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
