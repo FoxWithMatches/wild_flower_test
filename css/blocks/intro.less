@@ -16,6 +16,8 @@
   }
 
   &_content {
+    position: relative;
+
     @media @tablet {
       width: 100%;
       text-align: center;
@@ -24,10 +26,10 @@
   }
 
   &_header {
-    position: relative;
     font-size: 59px;
     font-weight: 400;
     color: @black;
+    margin-right: 44px;
 
     @media @tablet {
       font-size: 42px;
@@ -35,16 +37,22 @@
 
     @media @mobile {
       font-size: 25px;
+      margin-right: 0;
     }
 
     &_image {
         position: absolute;
-        top: 157px;
-        left: 50px;
+        top: -90px;
+        left: -90px;
 
         @media @tablet {
-          top: 137px;
-          left: 20px;
+          top: -60px;
+          left: 10px;
+          width: 240px;
+        }
+
+        @media @mobile{
+          display: none;
         }
     }
   }
@@ -55,8 +63,8 @@
     font-size: 24px;
     color: @black;
     line-height: 34px;
-    margin: 32px 0 64px 0;
-    width: 570px;
+    margin: 32px 44px 64px 0;
+    max-width: 570px;
 
     @media @tablet {
       width: 344px;
@@ -73,10 +81,10 @@
 
   &_contacts {
     position: relative;
-    margin-left: 44px;
     display: flex;
+    justify-content: space-between;
 
-    @media @desktop {
+    @media @tablet {
       display: none;
     }
   }
