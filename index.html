@@ -16,6 +16,8 @@
     <title>Wild Flower</title>
   </head>
   <body>
+    <!-- Header-->
+
     <header class="header">
       <div class="container">
         <div class="header_inner">
@@ -57,8 +59,8 @@
               </a>
             </div>
             <button class="burger_icon" type="button" id="close">
-                <img src="image/close.png" alt="close burger" />
-              </button>
+              <img src="image/close.png" alt="close burger" />
+            </button>
           </nav>
           <div class="nav_phone">
             <img src="image/iconcall.png" alt="image phone" />
@@ -71,8 +73,9 @@
         </div>
       </div>
     </header>
-
     <main>
+      <!-- Intro -->
+
       <div class="intro">
         <div class="container">
           <div class="intro_inner">
@@ -87,7 +90,7 @@
                 Каждый день мы создаем новую кoмпозицию из свежих, сезонных
                 цветов
               </p>
-              <button class="button">Заказать сейчас</button>
+              <button class="button" data-modal="#modal">Заказать сейчас</button>
             </div>
             <div class="intro_contacts">
               <img src="image/intro.png" alt="image" />
@@ -125,6 +128,8 @@
           </div>
         </div>
       </div>
+
+      <!-- Order -->
 
       <div class="order">
         <div class="container">
@@ -183,6 +188,43 @@
         </div>
       </div>
     </main>
+
+    <!-- Modal -->
+
+    <div class="modal" id="modal">
+      <div class="modal_dialog">
+        <button class="modal_close" type="button" data-close>
+          <img src="image/closeModal.png" alt="" />
+        </button>
+
+        <div class="contact">
+          <div>
+            <h2 class="modal_title">Обратный звонок</h2>
+
+            <form class="form" action="/" method="post">
+              <div class="form_group">
+                <label class="label" for="name">*Имя</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  class="input"
+                  placeholder="Николай"
+                />
+
+                <label class="label" for="tel">*Телефон</label>
+                <input id="tel" name="name" type="tel" class="input" />
+                <p class="description">
+                  *Нажимия кнопку “Оставить заявку” я даю согласие на обработку
+                  данных
+                </p>
+                <div class="button_center"><button class="button">Отправить заявку</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/app.js"></script>
   </body>

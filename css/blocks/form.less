@@ -1,0 +1,50 @@
+//main: ../style.less
+
+.form {
+    margin: 48px auto 64px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    &_group{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.label {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 11px;
+
+    @media @tablet {
+        font-size: 16px;
+    }
+}
+
+.input {
+    max-width: 521px;
+    height: 40px;
+    margin-bottom: 32px;
+    padding: 10px;
+    font-size: 14px;
+
+    @media @tablet {
+        font-size: 12px;
+    }
+}
+
+.description {
+    font-size: 14px;
+    margin-top: -32px;
+    margin-bottom: 32px;
+
+    @media @tablet {
+        font-size: 12px;
+        margin-top: -22px;
+    }
+
+}
