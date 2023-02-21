@@ -21,9 +21,13 @@
     <header class="header">
       <div class="container">
         <div class="header_inner">
-          <img src="image/logo.png" alt="logo" />
+          <img class="header_logo" src="image/logo.png" alt="logo" />
           <nav class="nav" id="nav">
-            <img class="header_logo" src="image/whitelogo.png" alt="logo" />
+            <img
+              class="burger_whitelogo"
+              src="image/whitelogo.png"
+              alt="logo"
+            />
             <a href="#" class="nav_link">Букеты</a>
             <a href="#" class="nav_link">Отзывы</a>
             <a href="#" class="nav_link">Доставка и оплата</a>
@@ -66,10 +70,19 @@
             <img src="image/iconcall.png" alt="image phone" />
             <a href="#" class="nav_phone_link">+7 (960) 210-22-33</a>
           </div>
+        </div>
 
-          <button class="burger" type="button" id="navToggle">
-            <img src="image/menu.svg" alt="open burger" />
-          </button>
+        <button class="burger" type="button" id="navToggle">
+          <img src="image/menu.svg" alt="open burger" />
+        </button>
+
+        <img class="burger_logo" src="image/logo.png" alt="logo" />
+
+        <div class="burger_phone">
+          <a class="burger_phone_link" href="tel:+79602102233">
+            <img src="image/iconcall.png" alt="image phone" />
+            <p class="nav_phone_link">+7 (960) 210-22-33</p>
+          </a>
         </div>
       </div>
     </header>
@@ -90,7 +103,9 @@
                 Каждый день мы создаем новую кoмпозицию из свежих, сезонных
                 цветов
               </p>
-              <button class="button" data-modal="#modal">Заказать сейчас</button>
+              <button class="button" data-modal="#modal">
+                Заказать сейчас
+              </button>
             </div>
             <div class="intro_contacts">
               <img src="image/intro.png" alt="image" />
@@ -127,7 +142,7 @@
             </div>
           </div>
         </div>
-          </div>
+      </div>
 
       <!-- Order -->
 
@@ -197,8 +212,8 @@
           <img src="image/closeModal.png" alt="" />
         </button>
 
-        <div class="contact">
-          <div>
+          <div class="modal_container">
+            <img class="modal_graphics" src="image/graphics.png" alt="">
             <h2 class="modal_title">Обратный звонок</h2>
 
             <form class="form" action="/" method="post">
@@ -218,11 +233,12 @@
                   *Нажимия кнопку “Оставить заявку” я даю согласие на обработку
                   данных
                 </p>
-                <div class="button_center"><button class="button">Отправить заявку</button></div>
+                <div class="button_center">
+                  <button class="button">Отправить заявку</button>
+                </div>
               </div>
             </form>
           </div>
-        </div>
       </div>
     </div>
 

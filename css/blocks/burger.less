@@ -1,26 +1,61 @@
 //main: ../style.less
 
 .burger {
-    display: none;
+  display: none;
 
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+
+  @media @tablet {
+    display: block;
+    margin-top: 24px;
+  }
+
+  &_icon {
+    display: none;
+    position: absolute;
+    top: 24px;
+    right: 45px;
     padding: 0;
     border: 0;
     background: none;
-    cursor: pointer;
-
 
     @media @tablet {
+      display: block;
+    }
+  }
+
+  &_logo {
+    display: none;
+
+    @media @tablet {
+      display: block;
+      margin: -56px auto 0 auto;
+    }
+  }
+
+  &_whitelogo {
+    display: none;
+    
+    @media @tablet {
         display: block;
+        margin: 24px auto 32px auto;
     }
-
-    &_icon {
-         position: absolute;
-         top: 24px;
-         right: 45px;
-         padding: 0;
-         border: 0;
-         background: none;
-    }
-
 }
 
+  &_phone {
+    display: none;
+
+    @media @tablet {
+      display: block;
+      text-align: right;
+      margin-top: -56px;
+    }
+
+    &_link {
+      text-decoration: none;
+    }
+  }
+}

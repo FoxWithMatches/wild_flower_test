@@ -45,6 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 36px;
 
     @media @tablet {
         gap: 24px;
@@ -53,6 +54,7 @@
   }
 
   &_item {
+    position: relative;
     @media @tablet {
         text-align: center;
     }
@@ -92,6 +94,7 @@
 
   &_image {
     width: 60px;
+    margin-right: 12px;
 
     @media @tablet {
         width: 50px;
@@ -104,6 +107,10 @@
 }
 
 .vector {
+  position: absolute;
+  top: -22px;
+  z-index: 1;
+
   @media @tablet {
     display: none;
   }

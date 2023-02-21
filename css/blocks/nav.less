@@ -69,11 +69,19 @@
     display: flex;
     align-items: center;
 
+    @media @tablet {
+      display: none;
+    }
+
     &_link {
         color: @beige;
         font-size: 20px;
         text-decoration: none;
         margin-left: 16px;
+
+        @media @mobile {
+          display: none;
+        }
     }
   }
 }
